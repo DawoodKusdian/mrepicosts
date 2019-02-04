@@ -1,0 +1,227 @@
+/*
+ Theme Name:   Mrepicosts (soledad-Child Theme)
+ Theme URI:    https://mrepicosts.com/soledad-child/
+ Description:  Mrepicosts wordpress theme, a child theme of Soledad
+ Author:       Dawood Kusdian
+ Author URI:   
+ Template:     soledad
+ Version:      1.0.0
+ Tags:         black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready, responsive-layout, infinite-scroll, post-slider, design, food, journal, magazine, news, photography, portfolio, clean, contemporary, dark, elegant, modern, professional, sophisticated
+ Text Domain:  soledad-child
+*/
+/*------------------Head Import----------------------*/
+@import url("../soledad/style.css");
+
+/*------------------- HERO HEADER --------------------*/
+/* Hero Header Image*/
+.bgimage {
+  width:100%;
+  /*height:500px;
+    margin-top: -100px!important; */
+  background: url('https://mrepicosts.com/wp-content/uploads/2018/10/MrEpicOstss-Img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.header-main-text{
+	color: #fff;
+    font-size: 35px!important;
+    line-height: 1.3;
+    margin-top: 34px;
+    font-family: 'Josefin Sans',sans-serif;
+	text-transform: none!important;
+	opacity:1!important;
+}
+.header-sub-text{
+	line-height: 1.3;
+    color: #fff;
+    font-size: 20px!important;
+    margin-top: 15px;
+    font-family: 'Josefin Sans',sans-serif;
+	opacity:1!important;
+}
+
+
+/*Homepage Call To Action Hero Button - CSS Source: https://tympanus.net/Development/CreativeButtons 
+.featured-area .bgimage .hero-text .hero-btn{
+	margin-top: 15px!important;
+	position: relative;
+    z-index: 5;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    background-color: #ae4588!important;
+    border-radius: 15px;
+    opacity: 0.4;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}*/
+/*END Homepage Call To Action Hero Button - End CSS Source */
+/*------------------- END HERO HEADER --------------------*/
+
+/* Make menu dropdowns toggle area larger */
+.indicator{
+	width:200px!important;
+}
+/* Search Bar padding increase */
+#top-search{
+	margin-left:50px!important;
+}
+
+/*------------------Featured Category----------------------*/
+/* Hover zoom effect on featured categories */
+.fea-box-img{
+    transition: transform .2s;
+}
+
+/* Hover zoom effect on featured categories */
+.fea-box-img:hover{
+    transform: scale(1.3);
+}
+
+/*Opacity on featured category banner */
+ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 {
+    opacity: 0.9;
+
+}
+
+/* Hover zoom effect on playlist video thumbnails*/
+.yotu-video-thumb-wrp{
+    transition: transform .2s!important;
+}
+/* Hover zoom effect on playlist video thumbnails*/
+.yotu-video-thumb-wrp:hover{
+    transform: scale(1.05)!important;
+}
+/*------------------END Featured Category----------------------*/
+
+/*------------------ Featured Slider----------------------*/
+.featured-area{
+    /*margin-top: 100px!important;*/
+}
+/*------------------END Featured Slider----------------------*/
+
+/*----------POSTS-------*/
+/*Align post image to centre*/
+.wp-caption{
+    margin: auto !important;
+}
+/*Post read more description src = https://codepen.io/maxds/pen/jgeoA */
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+/*----------END POSTS-------*/
+
+
+
+/*------------------FOOTER----------------------*/
+/*Footer Menu Bar */
+
+#footer-section {
+    /*background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Desktop-Black-Galaxy-Backgrounds-PIC-WPC009322.jpg");
+    opacity:0.8; */
+}
+/*Header Social Icon FOnt Size */
+.main-nav-social a {
+    font-size: 20px!important;
+}
+
+body .yotu-videos.yotu-preset-yoogleplay .yotu-video-title{
+    white-space: unset!important;
+}
+/*Background Image  for footer */
+/*------------------ END FOOTER----------------------*/
+
+/*------------------ PLUGINS----------------------*/
+/* Youtube Gallery Plugin - Fixing landscape thumbnail resize issue - thumbnails and irame overlap */
+
+/* Smartphones (landscape) -----------
+@media only screen and (min-width: 321px) and (max-width: 850px) and (orientation: landscape){
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* iPhone 4 (landscape) -----------
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* iPhone 5 (landscape) -----------
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+ 	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* iPhone 6 (landscape) -----------
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* iPhone 6+ (landscape) -----------
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* Samsung Galaxy S3 (landscape) -----------
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* Samsung Galaxy S4 (landscape) -----------
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+
+/* Samsung Galaxy S5 (landscape) -----------
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  	  .yotu-player iframe {
+		  height:200px!important;
+	  } 
+
+}
+*/
+/*------------------ END PLUGINS ----------------------*/
