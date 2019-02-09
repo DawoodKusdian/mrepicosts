@@ -15,10 +15,11 @@
 /*------------------- HERO HEADER --------------------*/
 /* Hero Header Image*/
 .bgimage {
-  width:100%;
+    height: 600px;
+    width: 100%;
   /*height:500px;
     margin-top: -100px!important; */
-  background: url('https://mrepicosts.com/wp-content/uploads/2018/10/MrEpicOstss-Img.jpg');
+  background-image: url('https://mrepicosts.com/wp-content/uploads/2018/10/MrEpicOstss-Img.jpg')!important;
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -38,17 +39,38 @@
     font-size: 35px!important;
     line-height: 1.3;
     margin-top: 34px;
-    font-family: 'Josefin Sans',sans-serif;
 	text-transform: none!important;
 	opacity:1!important;
+	text-shadow: 2px 2px 0px black;
+    color: #fff;
+
+    font-weight: 500!important;
+    font-size: 50px!important;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+    -o-animation-delay: 1.1s;
+    animation-delay: 1.1s;
 }
 .header-sub-text{
+	text-shadow: 2px 2px 0px black;
 	line-height: 1.3;
     color: #fff;
-    font-size: 20px!important;
+    font-size: 18px!important;
     margin-top: 15px;
-    font-family: 'Josefin Sans',sans-serif;
 	opacity:1!important;
+
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 15px 0 0;
+    color: #fff;
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    animation-delay: 1.4s;
 }
 
 
@@ -85,6 +107,12 @@
 .indicator{
 	width:200px!important;
 }
+
+/*Header Social Icon Font Size */
+.main-nav-social a {
+    font-size: 20px!important;
+}
+
 /* Search Bar padding increase */
 #top-search{
 	margin-left:50px!important;
@@ -117,11 +145,15 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 {
 }
 /*------------------END Featured Category----------------------*/
 
+
+
 /*------------------ Featured Slider----------------------*/
 .featured-area{
     /*margin-top: 100px!important;*/
 }
 /*------------------END Featured Slider----------------------*/
+
+
 
 /*----------POSTS-------*/
 /*Align post image to centre*/
@@ -139,6 +171,50 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 {
 
 
 
+/*----------PAGES-------*/
+body .yotu-videos.yotu-preset-yoogleplay .yotu-video-title{
+    white-space: unset!important;
+}
+
+/*Playlists page yotuwo plugin meta nad  titles to white to match black background*/
+.yotu-video-title{
+    color:white!important;
+}
+.yotuwp-video-meta{
+    color:white!important;
+}
+
+/*Changing background color of video playlist pages for a cool modal effect*/
+.yotu-videos li > a{
+    background-color:#282828!important;
+}
+.page-id-544, .page-id-1265, .page-id-1267, .page-id-1270, .page-id-1276, .page-id-1278{
+    background-color: #282828!important;
+}
+
+/* Scrollbar to grey on playlists page */
+.yotuwp-bar{
+	background:#4b4b4b!important;
+}
+
+/* Recommendations page background color */
+.page-id-1219{
+    background-color: #212121;
+}
+
+/* Recommendations page  carousel height*/
+.page-id-1219 .penci-image-holder{
+    height: 600px!important;
+}
+/* Playists title to white (Usability to match black background)*/
+.page-id-544 .entry-title, .page-id-1265 .entry-title, .page-id-1267 .entry-title, .page-id-1270 .entry-title, .page-id-1276 .entry-title, .page-id-1278 .entry-title{
+    color: white!important;
+}
+/*----------END PAGES-------*/
+
+
+
+
 /*------------------FOOTER----------------------*/
 /*Footer Menu Bar */
 
@@ -146,14 +222,7 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 {
     /*background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Desktop-Black-Galaxy-Backgrounds-PIC-WPC009322.jpg");
     opacity:0.8; */
 }
-/*Header Social Icon FOnt Size */
-.main-nav-social a {
-    font-size: 20px!important;
-}
 
-body .yotu-videos.yotu-preset-yoogleplay .yotu-video-title{
-    white-space: unset!important;
-}
 /*Background Image  for footer */
 /*------------------ END FOOTER----------------------*/
 
